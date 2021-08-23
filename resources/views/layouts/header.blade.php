@@ -1,7 +1,7 @@
 <header>
 	<div class="container">
 		<nav class="navbar navbar-expand-lg">
-		  <a class="navbar-brand" href="#">
+		  <a class="navbar-brand" href="{{ url('home') }}">
 		  	<img src="{{ URL::asset('public/assets/images/logo.png') }}" class="img-fluid">
 		  </a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +11,7 @@
 		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 		    <ul class="navbar-nav ml-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home</a>
+		        <a class="nav-link" href="{{ url('home') }}">Home</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#services">Services</a>
