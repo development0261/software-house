@@ -2,24 +2,24 @@
 @section('title','Software House')
 @section('content')
 
-@include('header.index')
+    @include('header.index')
 
-@include('about.index')
+    @include('about.index')
 
-@include('counter.index')
+    @include('counter.index')
 
-@include('projects.index')
+    @include('projects.index')
 
-@include('services.index')
+    @include('services.index')
 
-@include('process.index')
+    @include('process.index')
 
-@include('portfolio.index')
+    @include('portfolio.index')
 
-@include('technology.index')
+    @include('technology.index')
 
-@include('testimonial.index')
+    @include('testimonial.index')
 
-@include('getintouch.index')
+    @include('getintouch.index')
 
 @endsection

@@ -119,8 +119,8 @@
         </div>
     </div>
 </section>
-
 @endsection
+
 @section('app-js')
 <script type="text/javascript">
 	// $('#inputDate').datepicker({});

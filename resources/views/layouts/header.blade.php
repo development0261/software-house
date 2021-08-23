@@ -23,7 +23,7 @@
 		        <a class="nav-link" href="#">About us</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link book_call_btn" href="#"><img src="{{ URL::asset('public/assets/images/call_btn_icon.png') }}" class="img-fluid"> Book a call</a>
+		        <a class="nav-link book_call_btn" href="call"><img src="{{ URL::asset('public/assets/images/call_btn_icon.png') }}" class="img-fluid"> Book a call</a>
 		      </li>
 		    </ul>
 		  </div>
