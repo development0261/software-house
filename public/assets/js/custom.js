@@ -4,7 +4,8 @@ $(".VideoPopup").on('hidden.bs.modal', function (e) {
 
 
 $('#inputDate').datepicker({
-  uiLibrary: 'bootstrap4'
+  uiLibrary: 'bootstrap4',
+  format: 'yyyy-mm-dd'
 });
 
 

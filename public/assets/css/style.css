@@ -844,7 +844,7 @@ line-height: 135%;text-align: right;letter-spacing: -0.01em;color: #FFFFFF;}
     font-weight: normal;
     font-size: 16px;
     line-height: 156.6%;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     color: #C8C5C5;
     height: auto;
     padding: 17px 15px;

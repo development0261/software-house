@@ -11,7 +11,7 @@
 		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 		    <ul class="navbar-nav ml-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home</a>
+		        <a class="nav-link" href="home">Home</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Services</a>
