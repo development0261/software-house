@@ -1,4 +1,4 @@
-<section class="service_wrp">
+<section class="service_wrp" id="services">
     <div class="container">
         <h2 class="heading_title">We provide the best services <br>Upto the market</h2>
     </div>

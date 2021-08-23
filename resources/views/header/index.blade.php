@@ -5,7 +5,7 @@
                 <div class="video_text_wrp">
                     <h1>We create <strong>ideas</strong><br>into real <strong>products</strong></h1>
                     <p>We make your ideas come to life with the latest technology and assured quality</p>
-                    <a class="nav-link book_call_btn" href="#"><img src="{{ URL::asset('public/assets/images/call_btn_icon.png') }}" class="img-fluid"> Book a call</a>
+                    <a class="nav-link book_call_btn" href="{{ url('call') }}"><img src="{{ URL::asset('public/assets/images/call_btn_icon.png') }}" class="img-fluid"> Book a call</a>
                 </div>
                 <div class="client_logo">
                     <h2>Our beloved clients</h2>
