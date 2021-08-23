@@ -14,13 +14,13 @@
 		        <a class="nav-link" href="#">Home</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Services</a>
+		        <a class="nav-link" href="#services">Services</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Projects</a>
+		        <a class="nav-link" href="#project">Projects</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">About us</a>
+		        <a class="nav-link" href="#about">About us</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link book_call_btn" href="call"><img src="{{ URL::asset('public/assets/images/call_btn_icon.png') }}" class="img-fluid"> Book a call</a>

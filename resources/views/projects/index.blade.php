@@ -1,4 +1,4 @@
-<section class="recent_project_wrp">
+<section class="recent_project_wrp" id="project">
     <div class="container">
         <h2 class="heading_title">Recent projects</h2>
         <div class="recent_project_list">

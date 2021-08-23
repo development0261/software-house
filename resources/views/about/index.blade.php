@@ -1,4 +1,4 @@
-<section class="about_wrp">
+<section class="about_wrp" id="about">
     <div class="container p-0">
         <div class="title_heading">
             <div class="container">
