@@ -8,70 +8,72 @@
     </div>
 @endif
 
-<section class="main_video_wrp">
+<section class="book_call_talk_wrp">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="video_text_wrp">
-                    <h1>Book a time to talk <br> for open discussion</h1>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="video_box_wrp">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="main_video_wrp">
-    <div class="container">
+        <h2 class="heading_title text-left">Book a time to talk <br> for open discussion</h2>
+        <div class="book_call_talk_box">
         <form method="post" id="meetingForm" action="arrangeMeeting" enctype="multipart/form-data">
         	@csrf
-        	<div class="row align-items-center">
+        	<div class="row">
 	            <div class="col-lg-6">
-	                <div class="video_text_wrp">
+	                <div class="book_call_talk_box_title date_and_time_wrp">
 	                	<h3>Select Date and Time</h3>
 	                    <div class="form-group">
-				          <input type="date" class="form-control @if($errors->has('date')) is-invalid @enderror" id="inputDate" name="date">
-				          @if($errors->has('date')) 
+                        <input type="input" class="form-control @if($errors->has('date')) is-invalid @enderror" id="inputDate" name="date">
+                        @if($errors->has('date')) 
 				           	<div class="error">{{ $errors->first('date') }}</div>
 				          @enderror
 				        </div>
-				        <div class="form-group">
-				        	<div class="row">
-				        		<div class="col-6">
-				        			<div class="form-control">
-						        		<input type="radio" name="time" value="09:00:00"> 9:00
+                        <div class="time_select_wrp">
+                            <h4>Times you are available</h4>
+                            <div class="row">
+				        		<div class="col-lg-6 col-md-6">
+                                    <div class="time_select_group">
+                                    <input type="radio" id="test1" name="time" value="09:00:00">
+                                    <label for="test1">09.40 PM</label>
 						        	</div>
-				        			<div class="form-control">
-						        		<input type="radio" name="time" value="09:10:00"> 9:10
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="time_select_group">
+                                    <input type="radio" id="test2" name="time" value="09:10:00">
+                                    <label for="test2">09.40 PM</label>
 						        	</div>
-				        			<div class="form-control">
-						        		<input type="radio" name="time" value="09:20:00"> 9:20
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="time_select_group">
+                                    <input type="radio" id="test3" name="time" value="09:20:00">
+                                    <label for="test3">09.40 PM</label>
 						        	</div>
-						        </div>
-				        		<div class="col-6">
-				        			<div class="form-control">
-						        		<input type="radio" name="time" value="09:30:00"> 9:30
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="time_select_group">
+                                    <input type="radio" id="test4" name="time" value="09:30:00">
+                                    <label for="test4">09.40 PM</label>
 						        	</div>
-				        			<div class="form-control">
-						        		<input type="radio" name="time" value="09:40:00"> 9:40
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="time_select_group">
+                                    <input type="radio" id="test5" name="time" value="09:40:00">
+                                    <label for="test5">09.40 PM</label>
 						        	</div>
-				        			<div class="form-control">
-						        		<input type="radio" name="time" value="09:50:00"> 9:50
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="time_select_group">
+                                    <input type="radio" id="test6" name="time" value="09:50:00">
+                                    <label for="test6">09.40 PM</label>
 						        	</div>
-						        </div>
-				        	</div>
-				        </div>
+                                </div>
+                            </div>
+                        </div>
 				        @if($errors->has('time')) 
 				           	<div class="error">{{ $errors->first('time') }}</div>
 				        @enderror
 	                </div>
 	            </div>
-	            <div class="col-lg-5">
-	                <div class="">
+	            <div class="col-lg-6">
+	                <div class="book_call_talk_box_title">
 	                	<h3>Purpose for the call</h3>
+                        <div class="book_call_field_wrp">
 	                    <div class="form-group">
 	                    	<input type="text" name="name" placeholder="Enter your full name"  class="form-control @if($errors->has('name')) is-invalid @enderror">
 	                    	@if($errors->has('name'))
@@ -91,13 +93,17 @@
 				          	@enderror
 	                    </div>
 	                    <div class="form-group inputDnD">
-					        <input type="file" class="form-control-file text-secondary font-weight-bold @if($errors->has('logo')) is-invalid @enderror" id="inputFile" onchange="readUrl(this)" data-title="Drag and drop to upload logo (DOC, PDF, Image, ETC)" name="logo">
+					        <input type="file" class="form-control-file @if($errors->has('logo')) is-invalid @enderror" id="inputFile" onchange="readUrl(this)" name="logo">
+                            <span class="file_label_text">
+                                <img src="{{ URL::asset('public/assets/images/cloud_upload.png') }}" class="img-fluid">
+                                <p><strong>Drag and drop to upload logo</strong>Doc, PDF, Images ETC</p>
+                            </span>
 					        @if($errors->has('logo')) 
 				           		<div class="error">{{ $errors->first('logo') }}</div>
 				          	@enderror
 					    </div>
 	                    <div class="form-group">
-	                    	<textarea class="form-control @if($errors->has('note')) is-invalid @enderror" name="note" placeholder="Quick Note About Your Project"></textarea>
+	                    	<textarea class="form-control @if($errors->has('note')) is-invalid @enderror" name="note" placeholder="Quick Note About Your Project" rows="5"></textarea>
 	                    	@if($errors->has('note')) 
 				           		<div class="error">{{ $errors->first('note') }}</div>
 				          	@enderror
@@ -105,49 +111,16 @@
 	                    <div class="form-group">
 	                    	<button type="submit" class=" form-control btn btn-primary">Book Now</button>
 	                    </div>
+                        </div>
 	                </div>
 	            </div>
         	</div>
         </form>
+        </div>
     </div>
 </section>
-<style type="text/css">
-	.inputDnD .form-control-file {
-	  position: relative;
-	  width: 100%;
-	  height: 100%;
-	  min-height: 6em;
-	  outline: none;
-	  visibility: hidden;
-	  cursor: pointer;
-	  background-color: #c61c23;
-	  box-shadow: 0 0 5px solid currentColor;
-	}
-	.inputDnD .form-control-file:before {
-	  content: attr(data-title);
-	  position: absolute;
-	  left: 0;
-	  width: 100%;
-	  min-height: 6em;
-	  line-height: 2em;
-	  padding-top: 1.5em;
-	  opacity: 1;
-	  visibility: visible;
-	  text-align: center;
-	  border: 0.25em dashed currentColor;
-	  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-	  overflow: visible;
-	}
-	.inputDnD .form-control-file:hover:before {
-	  border-style: solid;
-	  box-shadow: inset 0px 0px 0px 0.25em currentColor;
-	}
-	.error {
-	    color: red;
-	}
-</style>
-
 @endsection
+
 @section('app-js')
 <script type="text/javascript">
 	// $('#inputDate').datepicker({});
@@ -175,14 +148,6 @@
           encode: true,
           success:function(res){
           	console.log(res);
-			$("input[type='radio'][name='time']").prop("disabled",false);
-          	if (res) {
-          		$.each(res, function(key, value) {
-		          	var a = value.time;
-		          	console.log(a);
-					$("input[type='radio'][name='time'][value='" + a + "']").prop("disabled",true);
-          		});
-          	}
           }
         });
 	});

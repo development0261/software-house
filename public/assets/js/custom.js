@@ -3,75 +3,84 @@ $(".VideoPopup").on('hidden.bs.modal', function (e) {
 });
 
 
-$(document).ready(function () {
+$('#inputDate').datepicker({
+  uiLibrary: 'bootstrap4'
+});
 
-   $(".client_slider_wrp").owlCarousel({
-     loop:true,
-     margin:10,
-     nav:true,
-     dots:false,
-     smartSpeed: 1000,
-     navText:['<div class="icon-prev"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>','<div class="icon-next"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>'],
-     responsive:{
-          0:{ 
-               loop:true,
-               autoplay:true,
-               stagePadding: 0,
-               center:false,
-               nav:true,
-               items:1
-          },
-          767:{
-               stagePadding: 0,
-               center:true,
-               items:2   
-          },
-          1000:{
-               stagePadding: 100,
-               items:3.1
-          },
-          1440:{
-               stagePadding: 100,
-               items:3.1
-          },
-       1920:{
-           items:4,
-       }
-     }
-})
 
-    $(".services_slide").owlCarousel({
-     loop:true,
-     margin:10,
-     nav:true,
-     dots:false,
-     smartSpeed: 1000,
-     navText:['<div class="icon-prev"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>','<div class="icon-next"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>'],
-     responsive:{
-          0:{ 
-               loop:true,
-               autoplay:true,
-               stagePadding: 0,
-               center:false,
-               nav:true,
-               items:1
-          },
-          767:{
-               stagePadding: 0,
-               center:true,
-               items:2   
-          },
-          1000:{
-               stagePadding: 100,
-               items:3.1
-          },
-          1440:{
-               stagePadding: 100,
-               items:3
-          },
-       1920:{
-           items:4,
-       }
-     }
-})
- });
+
+$('.client_slider_wrp').slick({
+  dots: false,
+  infinite: true,
+  arrows: true,
+  speed: 300,
+  autoplay: false,
+  slidesToShow: 3.2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2.2,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+$('.services_slide').slick({
+  dots: false,
+  infinite: true,
+  arrows: true,
+  speed: 300,
+   autoplay: false,
+  centerPadding: '10px',
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+

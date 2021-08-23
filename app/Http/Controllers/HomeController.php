@@ -7,9 +7,11 @@ use App\CallMeeting;
 
 class HomeController extends Controller
 {
+
     public function index(){
         return view('home');
     }
+
     public function bookCall(){
 
         return view('book_call');
@@ -17,8 +19,7 @@ class HomeController extends Controller
 
     public function arrangeMeeting(Request $request)
     {
-         $request->validate(CallMeeting::RULES);
-
+        $request->validate(CallMeeting::RULES);
 
         $data = array(
             CallMeeting::NAME => $request->name,

@@ -14,19 +14,22 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
       <!-- Custom CSS -->
       <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/bootstrap.css') }}">
-      <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/owl.carousel.min.css') }}">
-      <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/owl.theme.default.min.css') }}">
+      <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/slick.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/slick-theme.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/style.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/responsive.css') }}">
-      
-
-
       <title>@yield('title')</title>
-      
+        @yield('styles')
    </head>
-   <body>
 <body>
     <div id="app">
         @section('header')
@@ -38,9 +41,15 @@
          @section('footer')
             @include('layouts.footer')
          @show
-         @yield('app-js')
     </div>
-      
 </body>
+<script type="text/javascript" src="{{ asset('public/assets/js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/assets/js/popper.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/assets/js/bootstrap.min.js') }}"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="{{ asset('public/assets/js/slick.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/assets/js/custom.js') }}"></script>
+
+@yield('scripts')
 
 </html>

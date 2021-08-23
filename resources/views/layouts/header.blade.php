@@ -5,7 +5,7 @@
 		  	<img src="{{ URL::asset('public/assets/images/logo.png') }}" class="img-fluid">
 		  </a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon">Menu</span>
+		    <span class="navbar-toggler-icon"><img src="{{ URL::asset('public/assets/images/menubar_icon.png') }}" class="img-fluid"></span>
 		  </button>
 
 		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
