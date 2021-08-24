@@ -101,6 +101,46 @@ header {
     position: relative;
     padding: 15px 0;
 }
+header.sticky{
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 9;
+}
+#button {
+    display: inline-block;
+    background-color: #236cda;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 36px;
+    color: #fff;
+}
+  #button:hover {
+    cursor: pointer;
+    background-color: #236cda;
+  }
+  #button:active {
+    background-color: #236cda;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
 .video_box_wrp:after {
     content: '';
     background: url(../images/line_shape_1.png);
@@ -844,7 +884,7 @@ line-height: 135%;text-align: right;letter-spacing: -0.01em;color: #FFFFFF;}
     font-weight: normal;
     font-size: 16px;
     line-height: 156.6%;
-    /*text-transform: capitalize;*/
+    text-transform: capitalize;
     color: #C8C5C5;
     height: auto;
     padding: 17px 15px;
