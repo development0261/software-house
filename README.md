@@ -28,4 +28,4 @@ Follow the below steps to setup the project to your local machine.
 
 **Note :** In case if you see the error when you run the very first time, then run the below command that will remove the cache :
 	
-    ``php artisan optimize``
+    php artisan optimize
