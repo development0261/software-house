@@ -202,6 +202,26 @@ header.sticky{
     margin: 20px 0;
 }
 .main_video_wrp .video_text_wrp a{display: inline-block;}
+.VideoPopup button.close {
+    position: absolute;
+    top: -10px;
+    right: 0 !important;
+    transform: inherit !important;
+    left: inherit;
+    color: #f3eeee;
+    font-size: 40px;
+    cursor: pointer !important;
+    opacity: 1;
+    z-index: 1;
+    font-weight: 400;
+}
+.VideoPopup button.close:hover {
+    color: #f3eeee !important;
+}   
+.modal-backdrop.show {
+    opacity: 0.8 !important;
+}
+
 .client_logo {
     padding-top: 80px;
 }
@@ -408,6 +428,11 @@ header.sticky{
     text-transform: uppercase;
     color: #C8C5C5;
 }
+#counter .percent:after {
+    content: "+";
+    display: inline-block;
+}
+
 .recent_project_wrp{width: 100%;position: relative;}
 .heading_title{
     font-style: normal;

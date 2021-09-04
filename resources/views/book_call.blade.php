@@ -1,12 +1,6 @@
 @extends('layouts.app')
 @section('title','Software House')
 @section('content')
-	
-@if ($message = Session::get('success'))
-    <div class="alert alert-success">
-        <p>{{ $message }}</p>
-    </div>
-@endif
 
 <section class="book_call_talk_wrp">
     <div class="container">
@@ -14,6 +8,11 @@
         <div class="book_call_talk_box">
         <form method="post" id="meetingForm" action="arrangeMeeting" enctype="multipart/form-data">
         	@csrf
+        	@if ($message = Session::get('success'))
+			    <div class="alert alert-success">
+			        <p>{{ $message }}</p>
+			    </div>
+			@endif
         	<div class="row">
 	            <div class="col-lg-6">
 	                <div class="book_call_talk_box_title date_and_time_wrp">

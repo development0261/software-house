@@ -27,7 +27,11 @@
                       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-body p-0">
-                              <iframe width="100%" height="500" src="https://www.youtube.com/embed/X7R-q9rsrtU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <video width="100%" height="500" controls>
+                              <source src="{{ URL::asset('public/assets/videos/landingvideo.mp4') }}" type="video/mp4">
+                            </video>
+                              <!-- <iframe width="100%" height="500" src="https://www.youtube.com/embed/X7R-q9rsrtU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                           </div>
                         </div>
                       </div>

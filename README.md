@@ -22,9 +22,17 @@ Follow the below steps to setup the project to your local machine.
 	
     ``php artisan migrate``
 
+- **Run the below command in the command line to import the admin data in user table :**
+	
+    ``php artisan db:seed``    
+
 - **Hit the below URL to run the project :**
 	
     ``http://localhost/software-house/``
+
+- **Hit the below URL to open admin panel :**
+	
+    ``http://localhost/software-house/admin``    
 
 **Note :** In case if you see the error when you run the very first time, then run the below command that will remove the cache :
 	

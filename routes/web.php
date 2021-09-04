@@ -18,3 +18,12 @@ Route::get('/home',"HomeController@index");
 Route::get('/call',"HomeController@bookCall");
 Route::post('/arrangeMeeting',"HomeController@arrangeMeeting");
 Route::post('/checkTimeAvailability',"HomeController@checkTimeAvailability");
+Route::get('/logout', function(){
+   Auth::logout();
+   return Redirect::to('login');
+});
+
+Auth::routes();
+
+Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
+Route::get('/admin/meetings', 'AdminController@meetings')->name('admin.meetings');
