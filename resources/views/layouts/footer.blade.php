@@ -83,3 +83,6 @@
 	</div>
 </footer>
 <a id="button"></a>
+<script type="text/javascript">
+document.getElementById("fullscreen-bg__video").controls = false;
+</script>

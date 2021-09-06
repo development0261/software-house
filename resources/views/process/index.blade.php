@@ -1,11 +1,15 @@
 <section class="work_process_wrp">
     <div class="container">
         <h2>Metholodgy behind our working process</h2>
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-lg-6">
-                <video autoplay width="100%" height="400" controls loop="">
-                  <source src="{{ URL::asset('public/assets/videos/audit.mp4') }}" type="video/mp4">
-                </video>
+                <div class="video-box">
+                    <div class="video-box-inner">
+                        <video autoplay width="100%" controls="false" loop="" class="fullscreen-bg__video" id="fullscreen-bg__video">
+                          <source src="{{ URL::asset('public/assets/videos/audit.mp4') }}" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-6">
                 <div class="work_process_box">

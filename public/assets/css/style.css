@@ -1085,3 +1085,16 @@ td.today.gj-cursor-pointer {
 .gj-picker-bootstrap table tr td.today div {
     color: #fff;
     font-weight: 700;}
+
+.video-box {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+.video-box-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -68px;
+    right: -68px;
+}
