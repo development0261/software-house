@@ -3,7 +3,9 @@
         <h2>Metholodgy behind our working process</h2>
         <div class="row">
             <div class="col-lg-6">
-                <img src="{{ URL::asset('public/assets/images/white_bg.png') }}" class="img-fluid">
+                <video autoplay width="100%" height="400" controls loop="">
+                  <source src="{{ URL::asset('public/assets/videos/audit.mp4') }}" type="video/mp4">
+                </video>
             </div>
             <div class="col-lg-6">
                 <div class="work_process_box">

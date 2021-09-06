@@ -20,22 +20,23 @@
             </div>
             <div class="col-lg-7">
                 <div class="video_box_wrp">
-                    <img src="{{ URL::asset('public/assets/images/video_bg.png') }}" class="img-fluid">
-                    <button type="button" data-toggle="modal" data-target="#VideoPop"><img src="{{ URL::asset('public/assets/images/play_circle_filled.png') }}" class="img-fluid"></button>
+                    <video autoplay width="100%" height="400" controls loop>
+                      <source src="{{ URL::asset('public/assets/videos/landingvideo.mp4') }}" type="video/mp4">
+                    </video>
+                    <!-- <img src="{{ URL::asset('public/assets/images/video_bg.png') }}" class="img-fluid">
+                    <button type="button" data-toggle="modal" data-target="#VideoPop"><img src="{{ URL::asset('public/assets/images/play_circle_filled.png') }}" class="img-fluid"></button> -->
                     <!-- Modal -->
-                    <div class="modal fade VideoPopup" id="VideoPop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- <div class="modal fade VideoPopup" id="VideoPop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-body p-0">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <video width="100%" height="500" controls>
-                              <source src="{{ URL::asset('public/assets/videos/landingvideo.mp4') }}" type="video/mp4">
-                            </video>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                            
                               <!-- <iframe width="100%" height="500" src="https://www.youtube.com/embed/X7R-q9rsrtU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                          </div>
+                          <!-- </div>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
