@@ -38,17 +38,17 @@ $(window).scroll(function() {
 
 });
 
-$(".video-box-inner").mouseenter(function(e){
-  $(".video-box-inner").css('left', '-15px');
-  $(".video-box-inner").css('right', '-15px');
-  document.getElementById("fullscreen-bg__video").controls = true;
-});
+// $(".video-box-inner").mouseenter(function(e){
+//   $(".video-box-inner").css('left', '-15px');
+//   $(".video-box-inner").css('right', '-15px');
+//   document.getElementById("fullscreen-bg__video").controls = true;
+// });
 
-$(".video-box-inner").mouseleave(function(e){
-  $(".video-box-inner").css('left', '-68px');
-  $(".video-box-inner").css('right', '-68px');
-  document.getElementById("fullscreen-bg__video").controls = false;
-});
+// $(".video-box-inner").mouseleave(function(e){
+//   $(".video-box-inner").css('left', '-68px');
+//   $(".video-box-inner").css('right', '-68px');
+//   document.getElementById("fullscreen-bg__video").controls = false;
+// });
 
 $(".VideoPopup").on('hidden.bs.modal', function (e) {
      $(".VideoPopup iframe").attr("src",   $(".VideoPopup iframe").attr("src"));

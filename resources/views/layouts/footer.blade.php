@@ -85,4 +85,5 @@
 <a id="button"></a>
 <script type="text/javascript">
 document.getElementById("fullscreen-bg__video").controls = false;
+document.getElementById("fullscreen-bg__video1").controls = false;
 </script>

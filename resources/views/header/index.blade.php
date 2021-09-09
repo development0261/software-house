@@ -20,7 +20,7 @@
             </div>
             <div class="col-lg-7">
                 <div class="video_box_wrp">
-                    <video autoplay width="100%" height="400" controls loop>
+                    <video autoplay width="100%" height="400" controls="false" loop id="fullscreen-bg__video1">
                       <source src="{{ URL::asset('public/assets/videos/landingvideo.mp4') }}" type="video/mp4">
                     </video>
                     <!-- <img src="{{ URL::asset('public/assets/images/video_bg.png') }}" class="img-fluid">
